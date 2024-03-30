@@ -1,0 +1,189 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 30, 2024, 1:27:09 PM
+    Author     : Esanki Lakvindee
+*/
+/*Global styles*/
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 20px; /* Adjust this value to your preference */
+  transform: translateY(-50%);
+  color: white;
+  z-index: 1;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+/*phones*/
+.squares-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px; /* Adjust spacing as needed */
+}
+
+.square {
+  width: 384px;
+  height: 417px;
+  background-color: black; /* Adjust background color as needed */
+  text-align: center;
+}
+
+.square p {
+  margin: 10px 0;
+  font-size: 28px; /* Set font size to desired value */
+}
+
+.square img {
+  width: 384px; /* Set width to desired value */
+  height: 417px; /* Set height to desired value */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+.square p {
+  margin: 10px 0;
+}
+
+/*cameras*/
+.camera-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center;
+  margin-top: 60px; /* Adjust spacing as needed */
+}
+
+.camera-section .title h2 {
+  font-size: 36px; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.camera-section .description p {
+  font-size: 24px; /* Adjust font size as needed */
+  margin-bottom: 40px; /* Adjust spacing as needed */
+}
+
+/*smart watches*/
+.smartwatch-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center;
+  margin-top: 60px; /* Adjust spacing as needed */
+}
+
+.smartwatch-section .title h2 {
+  font-size: 36px; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+/* Headphones section */
+.headphones-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align items to the bottom */
+  align-items: flex-end; /* Align items to the right */
+  text-align: right; /* Align text to the right */
+  margin-top: 60px; /* Adjust spacing as needed */
+}
+
+.headphones-section .title h2 {
+  font-size: 36px; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.headphones-section .description p {
+  font-size: 24px; /* Adjust font size as needed */
+  margin-bottom: 40px; /* Adjust spacing as needed */
+}
+
+/* Laptops section */
+.laptops-section {
+  text-align: center; /* Center text */
+  margin-top: 60px; /* Adjust spacing as needed */
+}
+
+.laptops-section .title h2 {
+  font-size: 36px; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.laptops-section .description p {
+  font-size: 24px; /* Adjust font size as needed */
+  margin-bottom: 40px; /* Adjust spacing as needed */
+}
+
+/* PC Monitors section */
+.pc-monitors-section {
+  text-align: center; /* Center text */
+  margin-top: 80px; /* Adjust spacing as needed */
+}
+
+.pc-monitors-section .title h2 {
+  font-size: 36px; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+/* Electronics section */
+.electronics-section {
+  text-align: center; /* Center text */
+  margin-top: 80px; /* Adjust spacing as needed */
+}
+
+.electronics-section .title h2 {
+  font-size: 40px; /* Adjust font size as needed */
+  margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.electronics-section .description p {
+  font-size: 24px; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+
