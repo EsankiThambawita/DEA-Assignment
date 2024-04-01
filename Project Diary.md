@@ -1,12 +1,50 @@
 Project Diary
 
+1. Esanki Thambawita
 
-| Date       | Challenges Faced       | How They Were Overcome                                              | Contribution of Team Members  |
-|------------|------------------------|---------------------------------------------------------------------|-------------------------------|
-| 2024-03-30 | Debugging feature X    | Found issue in code and fixed it.                                   | @username1, @username2        |
-|            | Time constraints       | Prioritized tasks and delegated some work.                          | @username3                    |
-| 2024-04-01 | Server downtime        | Contacted hosting provider and resolved issue.                      | @username2                    |
-|            | Bug in UI              | Identified bug and applied fix.                                     | @username1                    |
-|            | Code review feedback   | Revised code according to feedback.                                 | @username3                    |
+| Date       | Challenges Faced                                                | How They Were Overcome                                              | 
+|------------|-----------------------------------------------------------------|---------------------------------------------------------------------|
+| 2024-04-01 | Issue in Figma design of home page                              | Found some incompatible design issues and redesigned some parts.    |
 
+
+
+
+2. TPR Fernando
+
+| Date       | Challenges Faced                                                 | How They Were Overcome                                              | 
+|------------|------------------------------------------------------------------|---------------------------------------------------------------------|
+| 2024-03-30 | Debugging feature X                                              | Found issue in code and fixed it.                                   |
+
+
+
+
+3. Sandali
+
+   
+| Date       | Challenges Faced                                                 | How They Were Overcome                                              | 
+|------------|------------------------------------------------------------------|---------------------------------------------------------------------|
+| 2024-03-30 | Debugging feature X                                              | Found issue in code and fixed it.                                   |
+
+
+
+4. Adheesha
+
+| Date       | Challenges Faced                                                 | How They Were Overcome                                              | 
+|------------|------------------------------------------------------------------|---------------------------------------------------------------------|
+| 2024-03-30 | Debugging feature X                                              | Found issue in code and fixed it.                                   |
+
+
+5. Oneli
+
+| Date       | Challenges Faced                                                 | How They Were Overcome                                              | 
+|------------|------------------------------------------------------------------|---------------------------------------------------------------------|
+| 2024-03-30 | Debugging feature X                                              | Found issue in code and fixed it.                                   |
+
+
+6. Chanuka
+
+
+| Date       | Challenges Faced                                                 | How They Were Overcome                                              | 
+|------------|------------------------------------------------------------------|---------------------------------------------------------------------|
+| 2024-03-30 | Debugging feature X                                              | Found issue in code and fixed it.                                   |
 
