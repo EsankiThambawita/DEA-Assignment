@@ -32,3 +32,4 @@ nb-configuration.xml
 hs_err_pid*
 replay_pid*
 /E-Mart/nbproject/private/
+*.properties
