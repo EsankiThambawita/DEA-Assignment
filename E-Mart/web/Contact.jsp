@@ -21,15 +21,15 @@
     </div>
     <div class="contact-options">
       <div class="contact-option">
-        <img src="phone-call.png" width="29.341" height="27.349" viewBox="0 0 29.341 27.349">
+        <img src="Images/Contact/phone-call.png" width="29.341" height="27.349" viewBox="0 0 29.341 27.349">
         <span>+94 77 310 4589</span>
       </div>
       <div class="contact-option">
-        <img src="email.png" width="29.341" height="27.349" viewBox="0 0 29.341 27.349">
+        <img src="Images/Contact/email.png" width="29.341" height="27.349" viewBox="0 0 29.341 27.349">
         <span>emart@gmail.com</span>
       </div>
       <div class="contact-option">
-        <img src="location.png" width="29.341" height="27.349" viewBox="0 0 29.341 27.349">
+        <img src="Images/Contact/location.png" width="29.341" height="27.349" viewBox="0 0 29.341 27.349">
         <span>70, Horton Place, Colombo, Sri Lanka</span>
       </div>
     </div>
@@ -38,9 +38,9 @@
     </div>
     <!-- New HTML for social media icons -->
     <div class="social-icons">
-      <a href="#"><img src="fb.png" alt="Facebook"></a>
-      <a href="#"><img src="insta.png" alt="Twitter"></a>
-      <a href="#"><img src="tiktok.png" alt="Instagram"></a>
+      <a href="#"><img src="Images/Contact/fb.png" alt="Facebook"></a>
+      <a href="#"><img src="Images/Contact/insta.png" alt="Twitter"></a>
+      <a href="#"><img src="Images/Contact/tiktok.png" alt="Instagram"></a>
     </div>
   </div>
 
