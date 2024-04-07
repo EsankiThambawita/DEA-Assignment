@@ -13,18 +13,21 @@
         <link href="CSS/Home.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        
-        <!<!-- Home page UI -->
-        <div class="container">
-    <div class="image-container">
-        <img src="Images/lens.jpg" alt="Background Image">
-        <div class="overlay"></div>
-        <div class="content">
-            <h1>Discover Smart Connections with<br>E-Mart Smartphones</h1><br><br>
-            <p>Explore the latest in smartphone technology and<br>connectivity. From flagship models to budget-friendly<br>options, 
-              find your perfect fit at E-Mart.</p>
-        </div>
-    </div>
+           
+    <!-- Home page UI -->
+    
+    
+    
+    <div class="container">
+      <div class="content">
+          <h1>Discover Smart Connections with<br>E-Mart Smartphones</h1>
+          <p>Explore the latest in smartphone technology and<br>connectivity. From flagship models to budget-friendly<br>
+            options, find your perfect fit at E-Mart.</p>
+          <div class="buttons">
+              <button>About Us</button>
+              <button class="start-shopping">Start Shopping</button>
+          </div>
+      </div>
     </div>
 
     <!--Phone section-->
