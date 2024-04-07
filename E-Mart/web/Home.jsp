@@ -15,211 +15,145 @@
     <body>
            
     <!-- Home page UI -->
-     <div class="background-container">
-        <img src="Images/Home/lens.jpg" alt="Background Image" class="background-image">
-        <div class="gradient-overlay"></div>
-        <div class="container">
-            <div class="content">
-                <h1>Discover Smart Connections with<br>E-Mart Smartphones</h1>
-                <p>Explore the latest in smartphone technology and<br>connectivity. From flagship models to budget-friendly<br>
-                options, find your perfect fit at E-Mart.</p>
-                <div class="buttons">
-                    <button>About Us</button>
-                    <button class="start-shopping">Start Shopping</button>
-                </div>
+     <div class="container">
+      <img src="Images/Home/lens.jpg" alt="Background Image" class="background-image">
+      <div class="gradient-overlay"></div>
+      <div class="content">
+          <h1>Discover Smart Connections with<br>E-Mart Smartphones</h1>
+          <p>Explore the latest in smartphone technology and<br>connectivity. From flagship models to budget-friendly<br>
+            options, find your perfect fit at E-Mart.</p>
+          <div class="buttons">
+              <button>About Us</button>
+              <button class="start-shopping">Start Shopping</button>
+          </div>
+      </div>
+    </div>
+    
+    <!-- Second Section -->
+    <div class="second-section">
+        <h2 class="Topic">Best Sellers</h2>
+        <div class="rectangle-container">
+            <div class="rectangle">
+                <img src="Images/Home/S24.png" alt="Product Image">
+                <span class="text1">Samsung Galaxy S24</span>
+                <span class="text2">LKR 400,000</span>
+            </div>
+           
+            <div class="rectangle">
+                <img src="Images/Home/S22.png" alt="Product Image">
+                <span class="text1">Samsung Galaxy S22</span>
+                <span class="text2">LKR 300,000</span>
+            </div>
+            
+            <div class="rectangle">
+                <img src="Images/Home/iphone14.png" alt="Product Image">
+                <span class="text1">Iphone 14</span>
+                <span class="text2">LKR 350,000</span>
+            </div>
+            
+            <div class="rectangle">
+                <img src="Images/Home/iphone15.png" alt="Product Image">
+                <span class="text1">Iphone 15</span>
+                <span class="text2">LKR 500,000</span>
             </div>
         </div>
     </div>
-
-    <!--Phone section-->
-    <!-- Squares container -->
-    <div class="squares-container">
-      <div class="square">
-          <img src="Images/S22.png" alt="Image 1">
-          <p>Samsung Galaxy S22</p>
-      </div>
-      <div class="square">
-          <img src="Images/S24.png" alt="Image 2">
-          <p>Samsung Galaxy S24</p>
-      </div>
-      <div class="square">
-          <img src="Images/iphone14.png" alt="Image 3">
-          <p>iphone 14</p>
-      </div>
-      <div class="square">
-          <img src="Images/iphone15.png" alt="Image 4">
-          <p>iphone 15</p>
-      </div>
+    
+    <!-- Third Section -->
+    <div class="second-section">
+        <h2 class="Topic">New Arrivals</h2>
+        <div class="rectangle-container">
+            <div class="rectangle">
+                <img src="Images/Home/D5600.png" alt="Product Image">
+                <span class="text1">Nikon D5600</span>
+                <span class="text2">LKR 350,000</span>
+            </div>
+           
+            <div class="rectangle">
+                <img src="Images/Home/SONY alpha.png" alt="Product Image">
+                <span class="text1">SONY Alpha 9 II</span>
+                <span class="text2">LKR 300,000</span>
+            </div>
+            
+            <div class="rectangle">
+                <img src="Images/Home/SONY RX10.png" alt="Product Image">
+                <span class="text1">SONY RX10 IV</span>
+                <span class="text2">LKR 450,000</span>
+            </div>
+            
+            <div class="rectangle">
+                <img src="Images/Home/iphone15.png" alt="Product Image">
+                <span class="text1">Iphone 15</span>
+                <span class="text2">LKR 500,000</span>
+            </div>
+        </div>
     </div>
+    
+    <!--Fourth section -->
+    <div class="categories-text">Categories</div>
 
-    <br><br><br><br><br><br>
+    <div class="category-container">
+        <div class="category1">
+            <div class="column1">
+                <img src="Images/Home/phone.png" alt="Image 1" style="height: 160px; width: 100px;">
+            </div>
+            <div class="column2">
+                <div class="line1">Smartphones</div>
+                <div class="line2">Explore our sleek smartphones, packed with cutting-edge tech for seamless connectivity and entertainment</div>
+            </div>
+        </div>
 
-    <!--Camera section-->
-    <div class="camera-section">
-      <div class="title">
-          <h2>Capture Every Moment with E-Mart Cameras</h2>
-      </div>
-      <div class="description">
-          <p>Whether you're a photography enthusiast or a casual snapper, our range of cameras caters to every need. From DSLRs to compact shooters, find the right camera for you at E-Mart.</p>
-      </div>
+        <div class="category2">
+            <div class="column1">
+                <img src="Images/Home/laptop.png" alt="Image 2" style="height: 130px; width: 120px;">
+            </div>
+            <div class="column2">
+                <div class="line1">Laptops</div>
+                <div class="line2">Enhance productivity with our versatile range of laptops, meticulously designed to meet your diverse needs.</div>
+            </div>
+        </div>
+
+        <div class="category3">
+            <div class="column1">
+                <img src="Images/Home/camera.png" alt="Image 3" style="height: 130px; width: 110px;">
+            </div>
+            <div class="column2">
+                <div class="line1">Cameras</div>
+                <div class="line2">Capture life's moments in stunning detail with our carefully curated selection of cameras.</div>
+            </div>
+        </div>
     </div>
+    
+    <!-- Fifth section -->
+    <div class="nextcategory-container">
+        <div class="category4">
+            <div class="column1">
+                <img src="Images/Home/watch.png" alt="Image 3" style="height: 150px; width: 130px;">
+            </div>
+            <div class="column2">
+                <div class="line1">Smart<br><br>Watches</div>
+                <div class="line2">Stay connected, organized, and impeccably stylish with our innovative collection of smartwatches."</div>
+            </div>
+        </div>
 
-    <!-- Squares container -->
-    <div class="squares-container">
-      <div class="square">
-          <img src="Images/SONY alpha.png" alt="Image 1">
-          <p>SONY alpha1</p>
-      </div>
-      <div class="square">
-          <img src="Images/SONY RX10.png" alt="Image 2">
-          <p>SONY RX10</p>
-      </div>
-      <div class="square">
-          <img src="Images/D5600.png" alt="Image 3">
-          <p>D5600</p>
-      </div>
-      <div class="square">
-          <img src="Images/D7500.png" alt="Image 4">
-          <p>D7500</p>
-      </div>
+        <div class="category5">
+            <div class="column1">
+                <img src="Images/Home/monitor.png" alt="Image 3" style="height: 130px; width: 130px;">
+            </div>
+            <div class="column2">
+                <div class="line1">Monitors</div>
+                <div class="line2">Immerse yourself in breathtaking visuals with our premium lineup of meticulously engineered monitors.</div>
+            </div>
+        </div>
     </div>
-
-    <br><br><br><br><br><br>
-
-    <!--Smart watches-->
-     <div class="smartwatch-section">
-        <div class="title">
-            <h2>Stay Ahead of Time with E-Mart Smart Watches</h2>
+    
+    
+    <!-- Sixth section -->
+    <div class="longrectangle-container">
+        <div class="longrectangle">
+            <p class="sentence">Experience Next-Level Performance with E-Mart Electronics</p>
+            <button class="start-shopping">Start Shopping</button>
         </div>
-      </div>
-
-      <!-- Squares container -->
-      <div class="squares-container">
-        <div class="square">
-            <img src="SONY alpha.png" alt="Image 1">
-            <p>SONY alpha1</p>
-        </div>
-        <div class="square">
-            <img src="SONY RX10.png" alt="Image 2">
-            <p>SONY RX10</p>
-        </div>
-        <div class="square">
-            <img src="D5600.png" alt="Image 3">
-            <p>D5600</p>
-        </div>
-        <div class="square">
-            <img src="D7500.png" alt="Image 4">
-            <p>D7500</p>
-        </div>
-      </div>
-
-      <br><br><br><br><br><br>
-
-      <!-- Headphones section -->
-    <div class="headphones-section">
-        <div class="title">
-          <h2>Immerse Yourself in Sound with E-Mart Headphones</h2>
-        </div>
-        <div class="description">
-          <p>Dive into a world of crisp, immersive sound with our<br>range of headphones. From over-ear<br>to in-ear, experience audio like never before with E-Mart.</p>
-        </div>
-      </div>
-
-      <!-- Squares container -->
-      <div class="squares-container">
-        <div class="square">
-            <img src="SONY alpha.png" alt="Image 1">
-            <p>SONY alpha1</p>
-        </div>
-        <div class="square">
-            <img src="SONY RX10.png" alt="Image 2">
-            <p>SONY RX10</p>
-        </div>
-        <div class="square">
-            <img src="D5600.png" alt="Image 3">
-            <p>D5600</p>
-        </div>
-        <div class="square">
-            <img src="D7500.png" alt="Image 4">
-            <p>D7500</p>
-        </div>
-      </div>
-
-      <br><br><br><br><br><br>
-
-      <!-- Laptops section -->
-    <div class="laptops-section">
-        <div class="title">
-          <h2>Unleash Productivity with E-Mart Laptops</h2>
-        </div>
-        <br>
-        <br>
-        <div class="description">
-          <p>Power through your tasks with our lineup of laptops. Whether you're a student, professional, or gamer, find the perfect blend of performance and portability at E-Mart.</p>
-        </div>
-      </div>
-
-      <!-- Squares container -->
-      <div class="squares-container">
-        <div class="square">
-            <img src="SONY alpha.png" alt="Image 1">
-            <p>SONY alpha1</p>
-        </div>
-        <div class="square">
-            <img src="SONY RX10.png" alt="Image 2">
-            <p>SONY RX10</p>
-        </div>
-        <div class="square">
-            <img src="D5600.png" alt="Image 3">
-            <p>D5600</p>
-        </div>
-        <div class="square">
-            <img src="D7500.png" alt="Image 4">
-            <p>D7500</p>
-        </div>
-      </div>
-
-      <br><br><br><br><br><br>
-
-
-      <!-- PC Monitors section -->
-      <div class="pc-monitors-section">
-        <div class="title">
-          <h2>Elevate Your Workspace with E-Mart PC Monitors</h2>
-        </div>
-      </div>
-
-      <!-- Squares container -->
-      <div class="squares-container">
-        <div class="square">
-            <img src="SONY alpha.png" alt="Image 1">
-            <p>SONY alpha1</p>
-        </div>
-        <div class="square">
-            <img src="SONY RX10.png" alt="Image 2">
-            <p>SONY RX10</p>
-        </div>
-        <div class="square">
-            <img src="D5600.png" alt="Image 3">
-            <p>D5600</p>
-        </div>
-        <div class="square">
-            <img src="D7500.png" alt="Image 4">
-            <p>D7500</p>
-        </div>
-      </div>
-
-      <br><br><br><br><br><br><br><br><br><br>
-
-      <!-- Electronics section -->
-      <div class="electronics-section">
-        <div class="title">
-          <h2>Experience Next-Level Performance with E-Mart Electronics</h2>
-        </div>
-        <div class="description">
-          <p>From cutting-edge processors to AI-powered technologies, E-Mart brings you the latest innovations in electronics. Elevate your experience and embrace the future with E-Mart.</p>
-        </div>
-      </div>
-        
+    </div>
     </body>
 </html>
