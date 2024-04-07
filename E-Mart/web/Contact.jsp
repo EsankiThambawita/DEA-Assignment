@@ -11,6 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Contact Page</title>
         <link href="CSS/Contact.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="CSS/NavBar.css">
     </head>
     <body>
         <!-- Left Column -->
