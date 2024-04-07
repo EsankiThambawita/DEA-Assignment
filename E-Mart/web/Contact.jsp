@@ -10,75 +10,120 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Contact Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="CSS/Contact.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/NavBar.css" rel="stylesheet" type="text/css"/>   
+        <script src="https://kit.fontawesome.com/7942e54de0.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div class="wrapper-center d-flex pt-5 mb-4 bg-accent-1 contact-page-content">
+            <img src="/letter_send 1.png" alt="" class="bg-graphic">
+            <div class="content-cards">
+                <div class="content-card bg-accent-2">
+                    <h3 class="c-card-tittle">Contact Information</h3>
+                    <p class="description">Experience the E-Mart difference for yourself! Contact us today to discuss
+                        flagship models to budget-friendly options, find your perfect fit at E-Mart.</p>
+                    <div class="contactlinks">
+                        <div class="contact-link">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span class="c-link-text">+94 00 000 0000</span>
+                        </div>
+                        <div class="contact-link">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="c-link-text">demo@gmail.com</span>
+                        </div>
+                        <div class="contact-link">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="c-link-text">70, Horton Place, Colombo, Sri Lanka</span>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.630551289352!2d80.54815007589576!3d6.814710993182925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNDgnNTMuMCJOIDgwwrAzMycwMi42IkU!5e0!3m2!1sen!2slk!4v1712511102827!5m2!1sen!2slk"
+                            width="400" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
 
-        <div class="container">
-            <!-- Left Column -->
-            <div class="left-column">
-                <div class="contact-info">
-                    <h2>Contact Information</h2>
-                    <p>Experience the E-Mart difference for yourself! Contact us today to discuss flagship models to budget-friendly options, find your perfect fit at E-Mart.</p>
-                </div>
-                <div class="contact-options">
-                    <div class="contact-option">
-                        <img src="Images/Contact/phone-call.png" width="29.341" height="27.349" viewBox="0 0 29.341 27.349">
-                        <span>+94 77 310 4589</span>
-                    </div>
-                    <div class="contact-option">
-                        <img src="Images/Contact/email.png" width="29.341" height="27.349" viewBox="0 0 29.341 27.349">
-                        <span>emart@gmail.com</span>
-                    </div>
-                    <div class="contact-option">
-                        <img src="Images/Contact/location.png" width="29.341" height="27.349" viewBox="0 0 29.341 27.349">
-                        <span>70, Horton Place, Colombo, Sri Lanka</span>
+                    <div class="socialButtons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
                     </div>
                 </div>
-                <div class="google-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.58639549205!2d79.77363157196287!3d6.922001951363854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1712041871408!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <!-- New HTML for social media icons -->
-                <div class="social-icons">
-                    <a href="#"><img src="Images/Contact/fb.png" alt="Facebook"></a>
-                    <a href="#"><img src="Images/Contact/insta.png" alt="Twitter"></a>
-                    <a href="#"><img src="Images/Contact/tiktok.png" alt="Instagram"></a>
+
+                <div class="c-contact-form">
+                    <form action="" class="contact-form">
+                        <div class="contact-form-row">
+
+                            <div class="contact-input-area">
+                                <label for="formGroupExampleInput" class="form-label">First Name</label>
+                                <input type="text" class="contact-form-control" id="firstName"
+                                       placeholder="Rove">
+                            </div>
+                            <div class="contact-input-area">
+                                <label for="formGroupExampleInput" class="form-label">Last Name</label>
+                                <input type="text" class="contact-form-control" id="lastName"
+                                       placeholder="Dough">
+                            </div>
+
+                        </div>
+                        <div class="contact-form-row">
+                            <div class="contact-input-area">
+                                <label for="formGroupExampleInput" class="form-label">Email</label>
+                                <input type="email" class="contact-form-control" id="firstName"
+                                       placeholder="demo@gmail.com">
+                            </div>
+                            <div class="contact-input-area">
+                                <label for="formGroupExampleInput" class="form-label">Phone Number</label>
+                                <input type="text" class="contact-form-control" id="lastName"
+                                       placeholder="+94 000 000 0000">
+                            </div>
+                        </div>
+                        <div class="contact-form-row">
+                            <div class="contact-input-area">
+                                <label for="formGroupExampleInput" class="form-label">Select Subject?</label>
+
+                                <div class="subjects">
+                                    <div class="radio-input-area">
+                                        <input class="form-check-input" type="radio" checked name="gridRadios" id="gridRadios"
+                                               value="option2">
+                                        <span class="checkmark"></span>
+                                        <label class="form-check-label" for="gridRadios">General Inquary</label>
+                                    </div>
+                                    <div class="radio-input-area">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                               value="option2">
+                                        <label class="form-check-label" for="gridRadios1">Product Inquary</label>
+                                    </div>
+                                    <div class="radio-input-area">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                               value="option2">
+                                        <label class="form-check-label" for="gridRadios2">Technical Assistace</label>
+                                    </div>
+                                    <div class="radio-input-area">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                                               value="option2">
+                                        <label class="form-check-label" for="gridRadios3">General Inquary</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form-row">
+                            <div class="contact-input-area">
+                                <label for="formGroupExampleInput" class="form-label">Message</label>
+                                <input type="text" class="contact-form-control" id="firstName"
+                                       placeholder="Example input placeholder">
+                            </div>
+                        </div>
+
+                        <div class="contact-form-row c-action">
+                            <button type="button" class="btn primary-btn order-btn">Send Message</button>
+                        </div>
+
+                    </form>
                 </div>
             </div>
-
-            <!-- Right Column -->
-            <div class="right-column">
-                <div class="contact-form">
-                    <div class="form-group">
-                        <label for="first-name">First Name:</label>
-                        <input type="text" id="first-name" class="input-field" placeholder="Enter your first name">
-                        <label for="last-name">Last Name:</label>
-                        <input type="text" id="last-name" class="input-field" placeholder="Enter your last name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" class="input-field" placeholder="Enter your email address">
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" class="input-field" placeholder="Enter your phone number">
-                    </div>
-                    <div class="form-group">
-                        <label>Select Subject:</label><br>
-                        <input type="radio" name="subject" value="general" id="general">
-                        <label for="general">General Inquiry</label><br>
-                        <input type="radio" name="subject" value="product" id="product">
-                        <label for="product">Product Inquiries</label><br>
-                        <input type="radio" name="subject" value="technical" id="technical">
-                        <label for="technical">Technical Assistance</label><br>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" class="input-field" rows="4" placeholder="Enter your message"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" class="submit-button" value="Send Message">
-                    </div>
-                </div>
-            </div>        
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
