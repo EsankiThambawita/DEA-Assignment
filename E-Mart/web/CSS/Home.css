@@ -7,55 +7,62 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Author     : Esanki Lakvindee
 */
 /*Global styles*/
-body, html {
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, sans-serif;
+    color: #FFF;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%), url('lens.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.image-container {
-  position: relative;
-  width: 100%;
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center;
 }
 
 .content {
-  position: absolute;
-  top: 50%;
-  left: 20px; /* Adjust this value to your preference */
-  transform: translateY(-50%);
-  color: white;
-  z-index: 1;
+    text-align: left;
+    margin-left: 5%; /* Adjust as needed */
 }
 
-.content h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+h1, p {
+    font-size: 3rem; /* Adjust as needed */
+    margin-bottom: 2rem; /* Adjust as needed */
 }
 
-.content p {
-  font-size: 24px;
-  margin: 0;
+p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 20px;
+}
+
+button {
+  width: 300px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 0.5px solid #FFF;
+  background: rgba(0, 0, 0, 0.00);
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #FFF;
+}
+
+
+.start-shopping {
+    background: rgba(21, 22, 99, 0.90);
+    backdrop-filter: blur(50px);
 }
 
 
