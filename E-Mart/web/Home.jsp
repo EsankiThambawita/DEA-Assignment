@@ -16,7 +16,7 @@
            
     <!-- Home page UI -->
     
-    
+    <img src="Images/Home/lens.jpg" alt="Background Image" class="background-image">
     
     <div class="container">
       <div class="content">

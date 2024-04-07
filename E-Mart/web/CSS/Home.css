@@ -15,30 +15,44 @@ body {
     color: #FFF;
 }
 
-.background-image {
+.background-container {
+    position: relative;
     width: 100%;
     height: 100vh;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
-   background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), url('C:\Users\Esanki Lakvindee\Documents\Github\DEA-Assignment\E-Mart\web\Images\Home\lens.jpg');
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)); /* Dark gradient */
 }
 
-
 .container {
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: flex-start; /* Align content to the left */
+    justify-content: flex-start;
     align-items: center;
 }
 
 .content {
     text-align: left;
-    margin-left: 5%; /* Adjust as needed */
+    margin-left: 5%;
+    z-index: 2; /* Ensure content appears above the overlay */
+    color: #FFF; /* Set text color to white */
 }
+
 
 h1, p {
     font-size: 3rem; /* Adjust as needed */
