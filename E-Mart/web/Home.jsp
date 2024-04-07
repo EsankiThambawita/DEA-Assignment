@@ -13,8 +13,11 @@
         <link href="CSS/Home.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        
-    <!<!-- Home page UI -->
+           
+    <!-- Home page UI -->
+    
+    
+    
     <div class="container">
       <div class="content">
           <h1>Discover Smart Connections with<br>E-Mart Smartphones</h1>
