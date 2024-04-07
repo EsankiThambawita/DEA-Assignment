@@ -24,7 +24,7 @@ Project Diary
    
 | Date       | Challenges Faced                                                 | How They Were Overcome                                              | 
 |------------|------------------------------------------------------------------|---------------------------------------------------------------------|
-| 2024-03-30 | Debugging feature X                                              | Found issue in code and fixed it.                                   |
+| 2024-03-31 | Having issues ensuring the code accurately aligns with the designed Figma page. | Consistently referencing Figma designs and carefully adjusting CSS styles to match text, colors, and layout                                  |
 
 
 
