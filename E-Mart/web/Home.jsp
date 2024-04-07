@@ -16,18 +16,16 @@
         
         <!<!-- Home page UI -->
         <div class="container">
-        <div class="rectangle">
-            <!-- Background image here -->
-        </div>
-        <div class="content">
-            <h1>Discover Smart Connections with<br>E-Mart Smartphones</h1>
-            <p>Explore the latest in smartphone technology and connectivity. From flagship models to budget-friendly options, find your perfect fit at E-Mart.</p>
-            <div class="buttons">
-                <button>About Us</button>
-                <button class="start-shopping">Start Shopping</button>
-            </div>
-        </div>
-        </div>
+      <div class="content">
+          <h1>Discover Smart Connections with<br>E-Mart Smartphones</h1>
+          <p>Explore the latest in smartphone technology and<br>connectivity. From flagship models to budget-friendly<br>
+            options, find your perfect fit at E-Mart.</p>
+          <div class="buttons">
+              <button>About Us</button>
+              <button class="start-shopping">Start Shopping</button>
+          </div>
+      </div>
+    </div>
 
     <!--Phone section-->
     <!-- Squares container -->
