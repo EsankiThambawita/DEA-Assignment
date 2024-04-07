@@ -1,122 +1,136 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="java.util.Map" %>
+<%@ page import="java.util.HashMap" %>
+<%@ page import="java.util.Map.Entry" %>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Checkout</title>
-    <link href="CSS/Checkout.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/Checkout.css"/>
+    <!-- Add Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
-    <div id="header">
-        <nav>
-            <ul>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#support">Support</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div id="content">
-        <div id="billing-section">
-            <h2>Billing Details</h2>
-            <form id="billing-details">
-                <div class="form-row">
-                    <div class="form-field">
-                        <label for="first-name">First Name *</label>
-                        <input type="text" id="first-name" required>
-                    </div>
-                    <div class="form-field">
-                        <label for="last-name">Last Name *</label>
-                        <input type="text" id="last-name" required>
-                    </div>
-                </div>
-                <div class="form-field">
-                    <label for="company-name">Company Name (optional)</label>
-                    <input type="text" id="company-name">
-                </div>
-                <div class="form-field">
-                    <label for="country">Country/Region *</label>
-                    <select id="country" required>
-                        <option value="">Select a country/region</option>
-                        <option value="USA">United States</option>
-                        <option value="UK">United Kingdom</option>
-                        <option value="Canada">Canada</option>
-                        <!--more country options here -->
-                    </select>
-                </div>
-                <div class="form-field">
-                    <label for="billing-address">Billing Address *</label>
-                    <input type="text" id="billing-address" required>
-                </div>
-                <div class="form-field">
-                    <label for="town-city">Town/City *</label>
-                    <input type="text" id="town-city" required>
-                </div>
-                <div class="form-field">
-                    <label for="state">State *</label>
-                    <select id="state" required>
-                        <option value="">Select a state</option>
-                        <option value="CA">California</option>
-                        <option value="NY">New York</option>
-                        <option value="TX">Texas</option>
-                        <!-- more state options here -->
-                    </select>
-                </div>
-                <div class="form-row">
-                    <div class="form-field">
-                        <label for="zip-code">Zip Code *</label>
-                        <input type="text" id="zip-code" required>
-                    </div>
-                    <div class="form-field">
-                        <label for="phone-email">Phone/Email *</label>
-                        <input type="text" id="phone-email" required>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div id="cart">
-            <h2><span>Your Cart</span>
-                <img src="Images/Vector.png" alt="cart">
-            </h2>
-            <ul>
-                <li>
-                    <span class="product-name">13 pro-max Apple iphone</span>
-                    <span class="sub-total">RS.200000</span>
-                </li>
-                <li>
-                    <span class="product-name">Air pods</span>
-                    <span class="sub-total">RS.50000</span>
-                </li>
-                <li>
-                    <span class="product-name">Total</span>
-                    <span class="sub-total">RS.250000</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div id="payment-method">
-        <h2><span>Payment Method</span>
-            <img src="Images/Payment.png" alt="pay">
-        </h2>
-        <h3><span>Credit Card</span>
-            <img src="Images/mastercard.png" alt="visa">                       
-        </h3>
-        <form>
-            <div class="form-field">            
-            <div class="form-field">
-                <label for="card-number">Card Number*</label>
-                <input type="text" id="card-number" required>
+<body style="background-color: #000000; color: #ffffff;">
+    <div class="container">
+        <h2><i class="fas fa-shopping-cart"></i> Checkout</h2>
+        <h3>Cart <i class="fas fa-shopping-cart"></i></h3>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+            <% 
+            Map<String, Double> cart = (Map<String, Double>) session.getAttribute("cart");
+            if (cart != null) {
+                double total = 0;
+                for (Map.Entry<String, Double> entry : cart.entrySet()) { %>
+                    <tr>
+                        <td><%= entry.getKey() %></td>
+                        <td>$<%= entry.getValue() %></td>
+                    </tr>
+                    <% total += entry.getValue();
+                }
+                session.setAttribute("total", total); %>
+                <tr>
+                    <td><b>Total:</b></td>
+                    <td><b>$<%= total %></b></td>
+                </tr>
+            <% } else { %>
+                <tr>
+                    <td colspan="2">Your cart is empty</td>
+                </tr>
+            <% } %>
+        </table>
+
+        <h3>Billing Details <i class="fas fa-user"></i></h3>
+        <form action="processPayment" method="post">
+            <div class="form-group">
+                <label><i class="fas fa-user"></i> Full Name:</label><br>
+                <input type="text" name="fullName" required placeholder="John Doe"><br>
             </div>
-            <div class="form-field">
-                <label for="expiration">Expiration (MM/YY)*</label>
-                <input type="text" id="expiration" required>
+            <div class="form-group">
+                <label><i class="fas fa-envelope"></i> Email:</label><br>
+                <input type="email" name="email" required placeholder="john@example.com"><br>
             </div>
-            <div class="form-field">
-                <label for="card-security-code">Card Security Code *</label>
-                <input type="text" id="card-security-code" required>
+            <div class="form-group">
+                <label><i class="fas fa-map-marker-alt"></i> Address:</label><br>
+                <input type="text" name="address" required placeholder="123 Street, City"><br>
             </div>
-            <button type="submit">Place Order</button>
+            <div class="form-group">
+                <label><i class="fas fa-city"></i> City:</label><br>
+                <input type="text" name="city" required placeholder="City"><br>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-flag"></i> State:</label><br>
+                <input type="text" name="state" required placeholder="State"><br>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-mail-bulk"></i> Zip:</label><br>
+                <input type="text" name="zip" required placeholder="Zip"><br>
+            </div>
+            
+            <h3>Payment Method <i class="fas fa-credit-card"></i></h3>
+            <div class="form-group">
+                <label><i class="fab fa-cc-visa"></i> Card Type:</label><br>
+                <select name="cardType" required>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="amex">American Express</option>
+                    <option value="discover">Discover</option>
+                </select><br>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-user"></i> Name on Card:</label><br>
+                <input type="text" name="cardName" required placeholder="John Doe"><br>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-credit-card"></i> Credit Card Number:</label><br>
+                <input type="text" name="cardNumber" required placeholder="1111-2222-3333-4444"><br>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-calendar-alt"></i> Expiry Date (MM/YYYY):</label><br>
+                <input type="text" name="expiryDate" required placeholder="MM/YYYY"><br>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-lock"></i> CVV:</label><br>
+                <input type="text" name="cvv" required placeholder="CVV"><br>
+            </div>
+            
+            <input type="submit" value="Submit Payment" class="btn btn-darkblue">
         </form>
     </div>
+    
+   
+    <!-- Adding Cart functionality -->
+    <script>
+        function addToCart(productName, productPrice) {
+            document.getElementById("productName").value = productName;
+            document.getElementById("productPrice").value = productPrice;
+            document.getElementById("action").value = "add";
+            document.getElementById("cartForm").submit();
+        }
+        
+        function removeFromCart(productName) {
+            document.getElementById("productName").value = productName;
+            document.getElementById("action").value = "remove";
+            document.getElementById("cartForm").submit();
+        }
+        
+        function updateCart(productName, productPrice) {
+            var quantity = document.getElementById(productName).value;
+            document.getElementById("productName").value = productName;
+            document.getElementById("productPrice").value = productPrice;
+            document.getElementById("quantity").value = quantity;
+            document.getElementById("action").value = "update";
+            document.getElementById("cartForm").submit();
+        }
+    </script>
+    
+    <form id="cartForm" action="CartController" method="post" style="display: none;">
+        <input type="hidden" id="productName" name="productName">
+        <input type="hidden" id="productPrice" name="productPrice">
+        <input type="hidden" id="quantity" name="quantity" value="1">
+        <input type="hidden" id="action" name="action">
+    </form>
 </body>
 </html>
