@@ -58,8 +58,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col order-btns">
-                                <button type="button" class="btn btn-outline-secondary text-white order-btn">Order History</button>
-                                <button type="button" class="btn primary-btn order-btn">Continue Shopping</button>
+                                <button type="button" class="btn btn-outline-secondary text-white order-btn">Clear Cart</button>
+                                <button type="button" class="btn primary-btn order-btn">Checkout</button>
                             </div>
                             <div class="col text-end order-total">
                                 <span>Total - </span>
