@@ -18,7 +18,7 @@
            
               
             <table>
-                <caption><h2 class="order-history">Order History</h2></caption>
+                <caption><h2 class="order-history">My Returns</h2></caption>
                 <thead>
                     <tr>
                         <th>Date</th>
