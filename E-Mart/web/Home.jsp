@@ -15,19 +15,20 @@
     <body>
            
     <!-- Home page UI -->
-    
-    <img src="Images/Home/lens.jpg" alt="Background Image" class="background-image">
-    
-    <div class="container">
-      <div class="content">
-          <h1>Discover Smart Connections with<br>E-Mart Smartphones</h1>
-          <p>Explore the latest in smartphone technology and<br>connectivity. From flagship models to budget-friendly<br>
-            options, find your perfect fit at E-Mart.</p>
-          <div class="buttons">
-              <button>About Us</button>
-              <button class="start-shopping">Start Shopping</button>
-          </div>
-      </div>
+     <div class="background-container">
+        <img src="Images/Home/lens.jpg" alt="Background Image" class="background-image">
+        <div class="gradient-overlay"></div>
+        <div class="container">
+            <div class="content">
+                <h1>Discover Smart Connections with<br>E-Mart Smartphones</h1>
+                <p>Explore the latest in smartphone technology and<br>connectivity. From flagship models to budget-friendly<br>
+                options, find your perfect fit at E-Mart.</p>
+                <div class="buttons">
+                    <button>About Us</button>
+                    <button class="start-shopping">Start Shopping</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--Phone section-->
