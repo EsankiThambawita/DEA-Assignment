@@ -12,7 +12,7 @@
         <title>Contact Page</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="CSS/Contact.css" rel="stylesheet" type="text/css"/>
-        
+        <link href="CSS/NavBar.css" rel="stylesheet" type="text/css"/>   
         <script src="https://kit.fontawesome.com/7942e54de0.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -117,7 +117,7 @@
                         </div>
 
                         <div class="contact-form-row c-action">
-                            <button type="button" class="btn primary-btn order-btn">Continue Shopping</button>
+                            <button type="button" class="btn primary-btn order-btn">Send Message</button>
                         </div>
 
                     </form>
