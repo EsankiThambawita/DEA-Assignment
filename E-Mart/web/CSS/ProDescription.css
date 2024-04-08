@@ -1,0 +1,138 @@
+html, body {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Inter';
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+}
+
+/* Columns */
+.left-column {
+    width: 48%;
+    position: relative;
+    margin-right: 2%;
+}
+
+.right-column {
+    width: 48%;
+    margin-top: 60px;
+    margin-left: 2%;
+}
+
+.vertical-line{
+    width: 1px;
+    height: 575px;
+    margin-top: 70px;
+    background-color: #3B7BF8;
+    border: none;
+}
+
+/* Left Column */
+
+/*
+.left-column img {
+    width: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  */
+
+.left-column img.active {
+    opacity: 1;
+}
+
+/*Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 50px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 93px;
+}
+
+
+.product-gallery {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.thumbnails img {
+    width: 500px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+
+/* Product Description */
+.product-description {
+    margin-bottom: 20px;
+}
+
+.product-description h1 {
+    font-weight: 800;
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.product-description h2 {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.availability {
+    display: inline-block;
+    background-color: #3B7BF8;
+    color: white;
+    font-weight: 200;
+    font-size: smaller;
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+
+.info-table {
+    margin-top: 40px;
+    color: white;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.info-table td{
+    padding-bottom: 10px;
+}
+
+.info-table td:first-child {
+    font-weight: 600;
+    padding-right: 25px;
+}
+
+.info-table td:last-child {
+    font-weight: 100;
+}
+
+.product-description p {
+    font-size: 16px;
+    font-weight: 200;
+    color: #ffffff;
+    line-height: 26px;
+}
+
+
+
+
