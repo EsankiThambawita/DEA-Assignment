@@ -9,10 +9,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-        
+        <title>Index Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="CSS/Contact.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/Navbar.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/Footer.css" rel="stylesheet" type="text/css"/>   
+        <script src="https://kit.fontawesome.com/7942e54de0.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1>Hi</h1>
+        <%@ include file="Navbar.html" %>
     </body>
 </html>

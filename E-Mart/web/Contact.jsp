@@ -12,12 +12,14 @@
         <title>Contact Page</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="CSS/Contact.css" rel="stylesheet" type="text/css"/>
-        <link href="CSS/NavBar.css" rel="stylesheet" type="text/css"/>   
+        <link href="CSS/Navbar.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/Footer.css" rel="stylesheet" type="text/css"/>   
         <script src="https://kit.fontawesome.com/7942e54de0.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="wrapper-center d-flex pt-5 mb-4 bg-accent-1 contact-page-content">
-            <img src="/letter_send 1.png" alt="" class="bg-graphic">
+         <%@ include file="Navbar.html" %>
+        <div class="wrapper-center d-flex mb-4 contact-page-content">
+            <img src="Images/letter_send.png" alt="" class="bg-graphic">
             <div class="content-cards">
                 <div class="content-card bg-accent-2">
                     <h3 class="c-card-tittle">Contact Information</h3>
@@ -119,11 +121,11 @@
                         <div class="contact-form-row c-action">
                             <button type="button" class="btn primary-btn order-btn">Send Message</button>
                         </div>
-
                     </form>
                 </div>
             </div>
         </div>
+        <%@ include file="Footer.html" %>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
