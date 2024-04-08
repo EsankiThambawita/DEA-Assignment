@@ -46,7 +46,7 @@ Project Diary
 |------------|------------------------------------------------------------------|---------------------------------------------------------------------|
 | 2024-04-6  |Matching the Layout and Design of checkout page in figma and making it responsive                                            | studying UI/UX principles online, experimenting with different layouts, and seeking inspiration from existing websites or design resources and fixed it.                                   |
 | 2024-04-7 |Making the cart functional in the checkout page                                         | Made the cart functional using JS and help of servlet
-|2024-04-08 |Adjusting spacing of the checkout page,the old CSS page didnt respond                               |created a new CSS page to adjust the spacings using CSS
+|2024-04-08 |Adjusting spacing of the checkout page,the old CSS page didnt respond and the responsiveness of the Contact page                               |created a new CSS page  to adjust the spacings using CSS, and modified the code of contact page to correct the responsiveness of the Contact.jsp and Contact.css
 6. Chanuka
 
 
