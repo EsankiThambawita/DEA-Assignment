@@ -6,7 +6,7 @@ Project Diary
 |------------|-----------------------------------------------------------------|---------------------------------------------------------------------|
 | 2024-04-01 | Issue in Figma design of home page                              | Found some incompatible design issues and redesigned some parts.    |
 | 2024-04-06 | Had to make a part of the Contact.jsp and the Contact.css, Then had some issues with getting the right spaces for the map.                                                                                                      | I tried some css properties and figured out how to make the right size for the embedded map.     |
-| 2024-04-07 | Came across an issue of spacing in the Checkout page and made responsiveness of Contact Us page              | Checked the space measurements one by one and fixed the css code and modified the Contact.jsp and Contact.css to correct the responsiveness   |
+| 2024-04-07 | Came across an issue of spacing in the home page              | Checked the space measurements one by one and fixed the css code  |
 
 
 
