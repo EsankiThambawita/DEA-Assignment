@@ -42,13 +42,13 @@
         </div>
         
         <div class="line"></div>
-      </div>
-      
-      <div class="buttons">
-        <button class="order-history">Order History</button>
-        <button class="continue-shopping">Continue Shopping</button>
-        <span>Total -</span>
-        <span>Total Value</span>
+        
+        <div class="item">
+          <span class="buttton1"><button class="order-history">Order History</button></span>
+          <span class="buttton2"><button class="continue-shopping">Continue Shopping</button></span>
+          <span class="total">Total -</span>
+          <span class="total-price">LKR 900,000</span>
+        </div>
       </div>
     </div>
             
