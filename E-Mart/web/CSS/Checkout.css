@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.container {
+  background-color: #000000;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+h2, h3 {
+  color: #ffffff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+}
+
+.btn {
+  background-color: #0d1b33;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #303f59;
+}
+
+.btn:active {
+  background-color: #303f59;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col-25, .col-50, .col-75 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.col-25 {
+  flex: 25%;
+}
+
+.col-50 {
+  flex: 50%;
+}
+
+.col-75 {
+  flex: 75%;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
