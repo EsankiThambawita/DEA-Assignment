@@ -1,3 +1,12 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 8, 2024, 7:33:33 PM
+    Author     : hp
+*/
+
 body {
   font-family: Arial, sans-serif;
   background-color: #000000;
@@ -39,23 +48,26 @@ form {
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom:20px;
 }
 
 label {
   font-weight: bold;
+  width: 40%; /* Adjust label width */
+  display: inline-block; /* Make labels behave like inline elements */
+  margin-bottom:8px;
 }
 
 input[type="text"], input[type="email"], select {
-  width: 100%;
-  padding: 10px;
+  width:95%;
+  padding:10px;
   border-radius: 3px;
   border: 1px solid #dddddd;
 }
 
 select {
-  width: 100%;
-  padding: 10px;
+  width:95%;
+  padding:10px;
   border-radius: 3px;
   border: 1px solid #dddddd;
 }
@@ -72,7 +84,7 @@ select {
 }
 
 .btn:hover {
-  background-color: #303f59;
+  background-color:#303f59;
 }
 
 .btn:active {
