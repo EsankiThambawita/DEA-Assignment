@@ -51,5 +51,7 @@ Project Diary
 
 | Date       | Challenges Faced                                                 | How They Were Overcome                                              | 
 |------------|------------------------------------------------------------------|---------------------------------------------------------------------|
-| 2024-03-30 | Debugging feature X                                              | Found issue in code and fixed it.                                   |
+| 2024-04-06 | Creating a gallery and allowing the user to select images        | Researched online to learn more, and had to use JS.
+| 2024-04-07 | Adding a vertical line/s as planned in the UI design phase, since theres no vertical line tag. | Created a horizontal line and adjusted its width and height to give the illusion of a vertical line.
+| 2023-04-07 | Creating the distinction between the product image/gallery on the left and product info on the right, in the Product Information page | Created 2 columns to divide the page into 2 sides
 
