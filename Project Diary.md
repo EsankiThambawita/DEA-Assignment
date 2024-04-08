@@ -36,7 +36,7 @@ Project Diary
 
 | Date       | Challenges Faced                                                 | How They Were Overcome                                              | 
 |------------|------------------------------------------------------------------|---------------------------------------------------------------------|
-| 2024-03-30 | Debugging feature X                                              | Found issue in code and fixed it.                                   |
+| 2024-03-30 | Issues with using Figma to design the UI for Profile Page,Order History, Track Order, Change Password and My Returns. | Referred You Tube tutorials about figma                                | 2024-04-05 | Issues with developing the Frontend part of Profile Page,Order History, Track Order, Change Password and My Returns.  | Over came them through online learning
 
 
 5. Oneli
