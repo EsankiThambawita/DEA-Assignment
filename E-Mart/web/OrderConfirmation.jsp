@@ -43,23 +43,25 @@
         
         <div class="line"></div>
         
-        <div class="item">
-          <span class="buttton1"><button class="order-history">Order History</button></span>
-          <span class="buttton2"><button class="continue-shopping">Continue Shopping</button></span>
-          <span class="total">Total -</span>
-          <span class="total-price">LKR 900,000</span>
+        <div class="button-container">
+          <button class="button button1">Order History</button>
+          <button class="button button2">Continue Shopping</button>
+          <span class="text1">Total -</span>
+          <span class="text2">LKR 900,000</span>
         </div>
+
+        
       </div>
     </div>
             
     <div class="feedback">
       <h3>How was your shopping experience?</h3>
       <div class="stars">
-        <img src="Images/OrderConfirmation/Star.png" alt="Star" class="star">
-        <img src="Images/OrderConfirmation/Star.png" alt="Star" class="star">
-        <img src="Images/OrderConfirmation/Star.png" alt="Star" class="star">
-        <img src="Images/OrderConfirmation/Star.png" alt="Star" class="star">
-        <img src="Images/OrderConfirmation/Star.png" alt="Star" class="star">
+        <img src="Images/OrderConfirmation/Star.png" alt="Star" class="star-full">
+        <img src="Images/OrderConfirmation/Star.png" alt="Star" class="star-full">
+        <img src="Images/OrderConfirmation/Star.png" alt="Star" class="star-full">
+        <img src="Images/OrderConfirmation/Star-empty.png" alt="Star" class="star-empty">
+        <img src="Images/OrderConfirmation/Star-empty.png" alt="Star" class="star-empty">
       </div>
     </div>
   </div>

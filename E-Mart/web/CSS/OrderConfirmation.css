@@ -31,7 +31,7 @@ body {
 .order-summary {
   width: calc(100% - 254px); /* Adjusted width */
   max-width: 1000px;
-  height: 700px;
+  height: 500px;
   margin: 0 127px; /* Added margin */
   border-radius: 20px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%), linear-gradient(209deg, rgba(0, 0, 0, 0.42) 17.86%, #000 82.12%), linear-gradient(93deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%);
@@ -49,13 +49,14 @@ body {
   margin-bottom: 32px;
 }
 
-.line {
+.line{
   width: 970px;
   height: 3px;
   background: rgba(59, 123, 248, 0.40);
   margin-bottom: 32px;
   margin-left: 20;
   margin-right: 20px;
+  
   
 }
 
@@ -70,49 +71,66 @@ body {
   flex: 1;
   text-align: left;
   font-size: 25px;
+  color: #FFF;
 }
 
 .name{
     margin-right: 300px;
 }
 
-.buttons {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 558px;
+.button {
+  height: 80.294px;
+  flex-shrink: 0;
+  border-radius: 20px;
 }
 
-.buttons button {
-  width: 250px;
-  height: 50px;
-  margin-right: 20px;
-  border-radius: 20px;
+.button1 {
+  width: 200px;
+  height: 65px; /* Added height */
+  flex-shrink: 0;
   border: 1px solid #FFF;
   background: #000;
-  color: #FFF;
+}
+
+.button2 {
+  width: 200px;
+  height: 65px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #151663;
+  margin-right: 235px;
+}
+
+.button1, .button2 {
+  color: #FFF; 
   font-size: 20px;
 }
 
-.continue-shopping{
-    margin-right: 300px;
+.text1, .text2 {
+  font-size: 25px;
+  color: #FFF;
+}
+
+.text1{
+    margin-right: 105px;
 }
 
 .feedback {
-  width: 986px;
-  height: 299px;
+  width: 700px;
+  height: 300px;
   border-radius: 50px;
   background: linear-gradient(180deg, #000 -44.82%, #151663 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 110px;
+  margin-top: 70px;
 }
 
 .feedback h3 {
   color: #FFF;
   font-family: 'Calibri', sans-serif;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 400;
   letter-spacing: 3.84px;
 }
@@ -121,8 +139,8 @@ body {
   display: flex;
 }
 
-.star {
-  width: 71px;
-  height: 78px;
+.star-full ,.star-empty {
+  width: 60px;
+  height: 61px;
   margin: 0 5px;
 }
