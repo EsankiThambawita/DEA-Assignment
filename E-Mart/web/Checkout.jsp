@@ -6,7 +6,7 @@
 <html>
 <head>
     <title>Checkout</title>
-    <link rel="stylesheet" type="text/css" href="CSS/Checkout.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/Checkout1.css"/>
     <!-- Add Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
