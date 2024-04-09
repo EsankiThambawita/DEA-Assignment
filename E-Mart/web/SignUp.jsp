@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>E-mart Sing-up</title>
+        <title>SignUp to E-mart</title>
      <link href="CSS/SignUp.css" rel="stylesheet" type="text/css"/>
          <script>
    function validation() {
@@ -89,7 +89,7 @@
     <label>07XXXXXXXX</label>
 </div>
             
-  <button class=" " type="submit">SING UP</button>
+  <button class=" " type="submit">SIGN UP</button>
             <br>
             <p style="text-align: center;">Already Have an Account? <a href="SignIn.jsp">Sign In</a>
 </p>
