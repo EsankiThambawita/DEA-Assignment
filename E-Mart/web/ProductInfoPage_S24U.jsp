@@ -80,7 +80,7 @@
     </div>
 </div>
 
-<script src="JavaScript/ProDescriptionJS.js"></script>
+<script src="JS/ProDescriptionJS.js"></script>
 
 </body>
 </html>
