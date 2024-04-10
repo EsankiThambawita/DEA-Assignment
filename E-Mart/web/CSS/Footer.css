@@ -1,507 +1,67 @@
-/* Common */
-
-body {
-    margin: 0;
-    line-height: normal;
-  }
-  
-  :root {
-    /* fonts */
-    --font-calibri: Calibri;
-    --font-inter: Inter;
-  
-    /* font sizes */
-    --font-size-xl: 16px;
-    --font-size-base: 12px;
-    --font-size-3xl: 18px;
-    --font-size-lg: 14px;
-    --font-size-9xl: 24px;
-  
-    /* Colors */
-    --color-white: #fff;
-  
-    /* Gaps */
-    --gap-xl: 10px;
-    --gap-3xl: 16px;
-    --gap-xs: 8px;
-  
-    /* Paddings */
-    --padding-7xl: 16px;
-    --padding-10xs: 2px;
-  }
-
-  /* Common */
-.vector-group:hover{
-    cursor: pointer;
+footer {
+  min-height: 400px;
+  background-color: rgb(0, 32, 22);
 }
 
-.footer-child {
-  width: 1920px;
-  height: 496px;
-  position: relative;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.07),
-      rgba(255, 255, 255, 0.07)
-    ),
-    linear-gradient(209.08deg, rgba(0, 0, 0, 0.42), #000),
-    linear-gradient(93.07deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24));
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(100px);
-  display: none;
-  max-width: 100%;
-}
-.e-mart-logo-icon {
-  width: 163px;
-  height: 40.6px;
-  position: relative;
-  object-fit: cover;
-  z-index: 1;
-}
-.from-cutting-edge-processors {
-  align-self: stretch;
-  position: relative;
-  letter-spacing: 0.08em;
-  line-height: 25px;
-  z-index: 1;
-}
-.e-mart-logo-parent {
-  width: 622px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 34.4px;
-  min-width: 622px;
-  max-width: 100%;
-}
+.footer-content {
+  background-color: rgb(13, 0, 43);
+  min-height: 260px;
 
-.company-parent{
-    margin-left: 120px;
-}
-
-.company {
-  font-weight: 600;
-}
-.about-e-mart,
-.company,
-.developers {
-  position: relative;
-  z-index: 1;
-}
-.developers {
-  display: inline-block;
-  min-width: 118px;
-}
-.about-e-mart-parent,
-.company-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.about-e-mart-parent {
-  gap: 13px;
-  font-size: var(--font-size-3xl);
-}
-.company-parent {
-  padding: 0 40px 0 0;
-  gap: var(--gap-3xl);
-}
-.my-mart,
-.my-profile,
-.my-profile1 {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-}
-.my-mart {
-  font-weight: 600;
-  min-width: 113px;
-}
-.my-profile,
-.my-profile1 {
-  min-width: 105px;
-}
-.my-profile1 {
-  z-index: 2;
-  margin-left: -80px;
-}
-.my-profile-parent {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.my-returns,
-.ongoing-orders,
-.order-history {
-  position: relative;
-  z-index: 1;
-}
-.my-returns {
-  display: inline-block;
-  min-width: 112px;
-}
-.frame-div,
-.my-mart-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.frame-div {
-  gap: 12px;
-  font-size: var(--font-size-3xl);
-}
-.my-mart-parent {
-  gap: var(--gap-3xl);
-}
-.contact-us {
-  font-weight: 600;
-}
-.contact-us,
-.div,
-.vector-icon {
-  position: relative;
-  z-index: 1;
-}
-.vector-icon {
-  height: 26px;
-  width: 26px;
-  min-height: 26px;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 20px;
 }
 
-.vector-parent {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xs);
-}
-.vector-icon1 {
-  width: 25px;
-  height: 18.8px;
-  position: relative;
-  z-index: 1;
-}
-.vector-wrapper {
-  height: 23.8px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 3px 0 0;
-  box-sizing: border-box;
-}
-.mailemartgmailcom {
-  position: relative;
-  white-space: nowrap;
-  z-index: 1;
-}
-.contact-us-parent,
-.frame-parent1,
-.frame-parent2 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.frame-parent2 {
-  flex-direction: row;
-  gap: 15px;
-}
-.contact-us-parent,
-.frame-parent1 {
-  flex-direction: column;
-}
-.frame-parent1 {
-  flex: 1;
-  gap: var(--gap-xs);
-  font-size: var(--font-size-3xl);
-}
-.contact-us-parent {
-  height: 123px;
-  gap: var(--gap-3xl);
-}
-.frame-container,
-.frame-group {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  max-width: 100%;
-}
-.frame-container {
-  justify-content: flex-start;
-  gap: 60px;
-  min-width: 796px;
-  font-size: var(--font-size-9xl);
-}
-.frame-group {
-  align-self: stretch;
-  justify-content: space-between;
-  gap: var(--gap-xl);
-}
-.vector-icon2 {
-  height: 39px;
-  width: 39px;
-  position: relative;
-  min-height: 39px;
-  z-index: 1;
-}
-.vector-icon3 {
-  width: 33px;
-  height: 26px;
-  position: relative;
-  z-index: 1;
-}
-.vector-container {
-  height: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 0 0 6px;
-  box-sizing: border-box;
-}
-.vector-icon4 {
-  width: 34px;
-  height: 34px;
-  position: relative;
-  z-index: 1;
-}
-.vector-frame {
-  height: 37px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 0 0 var(--padding-10xs);
-  box-sizing: border-box;
-}
-.vector-icon5 {
-  width: 33px;
-  height: 32px;
-  position: relative;
-  z-index: 1;
-}
-.vector-wrapper1 {
-  height: 35px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 0 0 var(--padding-10xs);
-  box-sizing: border-box;
-}
-.vector-icon6 {
-  width: 37px;
-  height: 25px;
-  position: relative;
-  z-index: 1;
-}
-.vector-wrapper2 {
-  height: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 0 0 7px;
-  box-sizing: border-box;
-}
-.vector-group {
-  width: 320px;
-  height: 39px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: var(--gap-xl);
-}
-.frame-parent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  max-width: 100%;
-}
-.frame-child {
-  align-self: stretch;
-  height: 2px;
-  border-top: 2px solid #3b7bf8;
-  box-sizing: border-box;
-}
-.electronics-mart-inc,
-.frame-child {
-  position: relative;
-  z-index: 1;
-}
-.cookie-settings,
-.privacy-policy,
-.terms-of-use {
-  position: relative;
-  display: inline-block;
-  min-width: 125px;
-  z-index: 1;
-}
-.privacy-policy,
-.terms-of-use {
-  min-width: 110px;
-}
-.terms-of-use {
-  min-width: 106px;
-}
-.cookie-settings-parent,
-.electronics-mart-inc-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  max-width: 100%;
-}
-.cookie-settings-parent {
-  justify-content: flex-start;
-  gap: 79.5px;
-}
-.electronics-mart-inc-parent {
-  align-self: stretch;
-  justify-content: space-between;
-  gap: var(--gap-xl);
-}
-.line-parent {
-  align-self: stretch;
-  flex-direction: column;
-  gap: 34px;
-  max-width: 100%;
-  font-size: var(--font-size-xl);
-  font-family: var(--font-calibri);
-}
-.footer,
-.footer-parent,
-.line-parent {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.footer {
-  flex: 1;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.07),
-      rgba(255, 255, 255, 0.07)
-    ),
-    linear-gradient(209.08deg, rgba(0, 0, 0, 0.42), #000),
-    linear-gradient(93.07deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24));
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(100px);
-  flex-direction: column;
-  padding: 67px 52px 53px;
-  box-sizing: border-box;
-  gap: 75px;
-  max-width: 100%;
-  text-align: left;
-  font-size: var(--font-size-3xl);
-  color: var(--color-white);
-  font-family: var(--font-inter);
-}
-.footer-parent {
-  width: 100%;
-  position: relative;
-  flex-direction: row;
-  letter-spacing: normal;
-}
-@media screen and (max-width: 1550px) {
-  .e-mart-logo-parent,
-  .frame-container {
-    flex: 1;
-  }
-  .frame-group {
-    flex-wrap: wrap;
-  }
-  .footer {
-    gap: 37px 75px;
-    padding-right: var(--padding-7xl);
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 1250px) {
-  .frame-container {
-    min-width: 100%;
-  }
-  .footer {
-    gap: 37px 75px;
-    padding-left: var(--padding-7xl);
-    padding-right: var(--padding-7xl);
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 825px) {
-  .e-mart-logo-parent {
-    gap: 17px 34.4px;
-    min-width: 100%;
-  }
-  .frame-container {
-    flex-wrap: wrap;
-    gap: 88px 44px;
-  }
-  .cookie-settings-parent {
-    flex-wrap: wrap;
-    gap: 79.5px 40px;
-  }
-  .electronics-mart-inc-parent {
-    flex-wrap: wrap;
-  }
-  .line-parent {
-    gap: 17px 34px;
-  }
-  .footer {
-    gap: 19px 75px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .from-cutting-edge-processors {
-    font-size: var(--font-size-lg);
-    line-height: 20px;
-  }
-  .company {
-    font-size: var(--font-size-3xl);
-  }
-  .about-e-mart,
-  .developers {
-    font-size: var(--font-size-lg);
-  }
-  .my-mart {
-    font-size: var(--font-size-3xl);
-  }
-  .my-profile,
-  .my-profile1,
-  .my-returns,
-  .ongoing-orders,
-  .order-history {
-    font-size: var(--font-size-lg);
-  }
-  .contact-us {
-    font-size: var(--font-size-3xl);
-  }
-  .div,
-  .mailemartgmailcom {
-    font-size: var(--font-size-lg);
-  }
-  .frame-container {
-    gap: 88px 22px;
-  }
-  .cookie-settings,
-  .electronics-mart-inc,
-  .privacy-policy,
-  .terms-of-use {
-    font-size: var(--font-size-base);
-  }
-  .cookie-settings-parent {
-    gap: 79.5px 20px;
-  }
-  .footer {
-    padding-top: 44px;
-    padding-bottom: 34px;
-    box-sizing: border-box;
-  }
+.seperator {
+  border-top: 2px solid rgb(255, 255, 0);
 }
 
+.footer-extra {
+  min-height: 90px;
+  background-color: #310812;
+}
 
+.footer-details {
+  background-color: #10372981;
+  flex-grow: 1;
+  max-width: 620px;
+}
+
+.footer-spacer {
+  background-color: #10372981;
+  min-width: 50px;
+  min-width: 50px;
+  flex-grow: 1;
+}
+
+.footer-about-links {
+  background-color: #10372981;
+  min-width: 50px;
+  min-width: 50px;
+}
+
+.footer-page-links {
+  background-color: #10372981;
+  min-width: 50px;
+  min-width: 50px;
+}
+
+.footer-contact-links {
+  background-color: #10372981;
+  min-width: 50px;
+  min-width: 50px;
+}
+
+.footer-extra {
+  background-color: #10372981;
+  min-width: 50px;
+  min-width: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+  }
+}
