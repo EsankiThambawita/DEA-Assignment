@@ -11,23 +11,23 @@ body {
     --font-inter: Inter;
   
     /* font sizes */
-    --font-size-xl: 16px;
-    --font-size-base: 12px;
-    --font-size-3xl: 18px;
-    --font-size-lg: 14px;
-    --font-size-9xl: 24px;
+    --font-size-xl: 20px;
+    --font-size-base: 16px;
+    --font-size-3xl: 22px;
+    --font-size-lg: 18px;
+    --font-size-9xl: 28px;
   
     /* Colors */
     --color-white: #fff;
   
     /* Gaps */
-    --gap-xl: 10px;
-    --gap-3xl: 16px;
-    --gap-xs: 8px;
+    --gap-xl: 20px;
+    --gap-3xl: 22px;
+    --gap-xs: 12px;
   
     /* Paddings */
-    --padding-7xl: 16px;
-    --padding-10xs: 2px;
+    --padding-7xl: 26px;
+    --padding-10xs: 3px;
   }
 
   /* Common */
@@ -74,11 +74,6 @@ body {
   min-width: 622px;
   max-width: 100%;
 }
-
-.company-parent{
-    margin-left: 120px;
-}
-
 .company {
   font-weight: 600;
 }
@@ -104,7 +99,7 @@ body {
   font-size: var(--font-size-3xl);
 }
 .company-parent {
-  padding: 0 40px 0 0;
+  padding: 0 38px 0 0;
   gap: var(--gap-3xl);
 }
 .my-mart,
@@ -124,7 +119,7 @@ body {
 }
 .my-profile1 {
   z-index: 2;
-  margin-left: -80px;
+  margin-left: -105px;
 }
 .my-profile-parent {
   display: flex;
@@ -150,7 +145,7 @@ body {
   justify-content: flex-start;
 }
 .frame-div {
-  gap: 12px;
+  gap: 12.7px;
   font-size: var(--font-size-3xl);
 }
 .my-mart-parent {
@@ -166,11 +161,13 @@ body {
   z-index: 1;
 }
 .vector-icon {
-  height: 26px;
-  width: 26px;
-  min-height: 26px;
+  height: 28px;
+  width: 28px;
+  min-height: 28px;
 }
-
+.div {
+  white-space: nowrap;
+}
 .vector-parent {
   flex: 1;
   display: flex;
@@ -191,7 +188,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 3px 0 0;
+  padding: 5px 0 0;
   box-sizing: border-box;
 }
 .mailemartgmailcom {
@@ -232,7 +229,7 @@ body {
 }
 .frame-container {
   justify-content: flex-start;
-  gap: 60px;
+  gap: 88px;
   min-width: 796px;
   font-size: var(--font-size-9xl);
 }
@@ -415,11 +412,6 @@ body {
   }
   .frame-group {
     flex-wrap: wrap;
-  }
-  .footer {
-    gap: 37px 75px;
-    padding-right: var(--padding-7xl);
-    box-sizing: border-box;
   }
 }
 @media screen and (max-width: 1250px) {
