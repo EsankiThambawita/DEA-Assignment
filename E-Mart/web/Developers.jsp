@@ -63,7 +63,7 @@
     <div class="column">
       <div class="card">
           <a href="https://www.linkedin.com/in/chanuka-wijesinghe-83968825a?trk=blended-typeahead">  
-               <img src= "Images/Developers/Chanuka.jpg"  alt="E. L Thambawita" style="width:100%"></a>
+               <img src= "Images/Developers/Rovin.jpg"  alt="E. L Thambawita" style="width:100%"></a>
               <div class="container">
                 <h2>W.M.C.S Wijesinghe</h2>
                 <p class="title">BSc (Hons) in Computer Science</p>
