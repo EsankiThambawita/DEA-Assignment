@@ -1,14 +1,24 @@
 name: Virus Scan
-
 on:
   push:
     branches:
       - '*'
+    paths:
+      - '**'  # Trigger on any path changes
+    # Filter by author username
+    author:
+      username:
+        - TPR-Fernando
+
   pull_request:
     branches:
       - '*'
-  schedule:
-    - cron: '0 0 * * *'  # Scan every day at midnight (UTC)
+    paths:
+      - '**'  # Trigger on any path changes
+    # Filter by author username
+    author:
+      username:
+        - TPR-Fernando
 
 jobs:
   scan:
@@ -18,22 +28,21 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Download and install ClamAV
-      run: |
-        Invoke-WebRequest -Uri "https://github.com/Cisco-Talos/clamav-win32/releases/download/v0.103.2/clamav-0.103.2-win-x64-portable.zip" -OutFile "clamav.zip"
-        Expand-Archive -Path "clamav.zip" -DestinationPath "C:\clamav"
-        Remove-Item "clamav.zip"
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
 
-    - name: Update ClamAV database
-      run: C:\clamav\clamav-0.103.2\bin\freshclam.exe
+    - name: Install VirusTotal CLI
+      run: pip install vt-py
 
     - name: Scan code files
-      run: C:\clamav\clamav-0.103.2\bin\clamscan.exe --recursive --bell --detect-pua --detect-structured --detect-ole2macros --follow-dir-symlinks --follow-file-symlinks --infected --suppress-ok-results .
+      run: vt scan ${{ github.workspace }} --apikey ${{ secrets.VIRUSTOTAL_API_KEY }}
 
     - name: Scan commit messages
       run: |
-        git log --format=%B -n 1 ${{ github.sha }} | C:\clamav\clamav-0.103.2\bin\clamscan.exe -
+        git log --format=%B -n 1 ${{ github.sha }} | vt scan --apikey ${{ secrets.VIRUSTOTAL_API_KEY }}
 
     - name: Scan pull request diffs
       run: |
-        git diff --name-only ${{ github.event.before }} ${{ github.sha }} | xargs C:\clamav\clamav-0.103.2\bin\clamscan.exe --
+        git diff --name-only ${{ github.event.before }} ${{ github.sha }} | xargs vt scan --apikey ${{ secrets.VIRUSTOTAL_API_KEY }}
