@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Change Password</title>
-        <link href="CSS/ChangePassword.css" rel="stylesheet" />
+        <link href="CSS/ChangePassword.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
          
