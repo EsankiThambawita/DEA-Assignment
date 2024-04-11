@@ -37,12 +37,14 @@ jobs:
       run: pip install vt-py
 
     - name: Scan code files
-      run: vt scan ${{ github.workspace }} --apikey ${{ secrets.VIRUSTOTAL_API_KEY }}
+      run: python -m vt scan ${{ github.workspace }} --apikey ${{ secrets.VIRUSTOTAL_API_KEY }}
 
     - name: Scan commit messages
       run: |
-        git log --format=%B -n 1 ${{ github.sha }} | vt scan --apikey ${{ secrets.VIRUSTOTAL_API_KEY }}
+        git log --format=%B -n 1 ${{ github.sha }} | python -m vt scan --apikey ${{ secrets.VIRUSTOTAL_API_KEY }}
 
     - name: Scan pull request diffs
+      run: |
+        git diff --name-only ${{ github.event.before }} ${{ github.sha }} | xargs python -m vt scan --apikey ${{ secrets.VIRUSTOTAL_API_KEY }}
       run: |
         git diff --name-only ${{ github.event.before }} ${{ github.sha }} | xargs vt scan --apikey ${{ secrets.VIRUSTOTAL_API_KEY }}
