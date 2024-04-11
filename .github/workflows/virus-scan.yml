@@ -1,0 +1,50 @@
+name: Virus-Scan
+on:
+  push:
+    branches:
+      - '*'
+    paths:
+      - '**'  # Trigger on any path changes
+    # Filter by author username
+    author:
+      username:
+        - TPR-Fernando
+
+  pull_request:
+    branches:
+      - '*'
+    paths:
+      - '**'  # Trigger on any path changes
+    # Filter by author username
+    author:
+      username:
+        - TPR-Fernando
+
+jobs:
+  scan:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install VirusTotal CLI
+      run: pip install vt-py
+
+    - name: Scan code files
+      run: python -m vt scan ${{ github.workspace }} --apikey ${{ secrets.VIRUSTOTAL_API_KEY }}
+
+    - name: Scan commit messages
+      run: |
+        git log --format=%B -n 1 ${{ github.sha }} | python -m vt scan --apikey ${{ secrets.VIRUSTOTAL_API_KEY }}
+
+    - name: Scan pull request diffs
+      run: |
+        git diff --name-only ${{ github.event.before }} ${{ github.sha }} | xargs python -m vt scan --apikey ${{ secrets.VIRUSTOTAL_API_KEY }}
+      run: |
+        git diff --name-only ${{ github.event.before }} ${{ github.sha }} | xargs vt scan --apikey ${{ secrets.VIRUSTOTAL_API_KEY }}
